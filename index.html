@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="icon" type="imagen/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <header>
+        <a href="">
+           <img src="img/Logo.png" alt="Descripción del logotipo" class="logo">
+        </a>
+    </header>
+    <div class="conteiner">
+        <div class="encriptar">
+            <textarea 
+            name="texto" 
+            class="texto" 
+            id="texto" 
+            cols="30" 
+            rows="10" 
+            placeholder="Ingresa el texto aquí"
+            ></textarea>
+        </div>
+
+        <div class="terminos">
+            <p> Solo letras minusculas y sin acentos.</p>
+
+        </div>
+
+        <div class="botones">
+            <button class="btn-encriptar" type="button" onclick="encriptar()"> 
+                Encriptar 
+            </button>
+            <button class="btn-desencriptar" type="button" onclick="desencriptar()"> 
+                Desencriptar 
+            </button>
+            
+        </div>
+        
+        <div class="encriptado">
+            <img src="img/muñeco.png" alt="" id="muñeco"/>
+                <div class="mensaje-encriptado" id="mensaje-encriptado">
+                    <h2 id = "titulo-mensaje"> Ningún mensaje encontrado</h2>
+                    <p id="parrafo">
+                        Ingrese texto que desea encriptar o desencriptar</p>
+                   
+                </div>
+        
+        </div>
+    </div>
+    
+    <footer>
+        <p class="copyright">&copy;copyright 2024 - Encriptador de texto - Desarrollado por Monica Salvalaggio</p>
+             <a href="#" rel="">
+                 <img src="img/linkedin.png" alt="Logo linkedin" class="linked">
+            </a>
+            <a href="#" rel="">
+                 <img src="img/github.png" alt="Logo github" class="git">
+            </a>
+
+    </footer>
+</body>
+<script src="index.js"></script>
+</html>
